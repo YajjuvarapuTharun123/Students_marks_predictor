@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Grade Predictor</h1>
+        <form action="/predict" method="post">
+            <label for="Age">Age:</label>
+            <input type="number" id="Age" name="Age" required><br>
+
+            <label for="Gender">Gender:</label>
+            <input type="number" id="Gender" name="Gender" required><br>
+
+            <label for="Ethnicity">Ethnicity:</label>
+            <input type="number" id="Ethnicity" name="Ethnicity" required><br>
+
+            <label for="ParentalEducation">Parental Education:</label>
+            <input type="number" id="ParentalEducation" name="ParentalEducation" required><br>
+
+            <label for="StudyTimeWeekly">Study Time Weekly:</label>
+            <input type="number" id="StudyTimeWeekly" name="StudyTimeWeekly" required><br>
+
+            <label for="Absences">Absences:</label>
+            <input type="number" id="Absences" name="Absences" required><br>
+
+            <label for="Tutoring">Tutoring:</label>
+            <input type="number" id="Tutoring" name="Tutoring" required><br>
+
+            <label for="ParentalSupport">Parental Support:</label>
+            <input type="number" id="ParentalSupport" name="ParentalSupport" required><br>
+
+            <label for="Extracurricular">Extracurricular:</label>
+            <input type="number" id="Extracurricular" name="Extracurricular" required><br>
+
+            <label for="Sports">Sports:</label>
+            <input type="number" id="Sports" name="Sports" required><br>
+
+            <label for="Music">Music:</label>
+            <input type="number" id="Music" name="Music" required><br>
+
+            <label for="Volunteering">Volunteering:</label>
+            <input type="number" id="Volunteering" name="Volunteering" required><br>
+
+            <label for="GPA">GPA:</label>
+            <input type="number" step="0.01" id="GPA" name="GPA" required><br>
+
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
